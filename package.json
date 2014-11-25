@@ -1,0 +1,33 @@
+{
+  "name": "nforce-chatter",
+  "version": "0.0.1",
+  "description": "Force.com Chatter API plugin for nforce",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jeffdonthemic/nforce-chatter.git"
+  },
+  "keywords": [
+    "nforce",
+    "salesforce",
+    "chatter",
+    "forcedotcom"
+  ],
+  "author": "Jeff Douglas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffdonthemic/nforce-chatter/issues"
+  },
+  "homepage": "https://github.com/jeffdonthemic/nforce-chatter",
+  "dependencies": {
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "nforce": "*",
+    "mocha": "~1.17.0",
+    "should": "~3.0.1"
+  }
+}
