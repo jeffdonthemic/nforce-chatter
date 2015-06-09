@@ -138,6 +138,14 @@ Posts a new feeditem for a record.
 
 * `id`: Required. The ID of the parent this feed element is being posted to. This value can be the ID of a user, group, or record, or the string me to indicate the context user.
 * `text`: Required. The text of the post.
+* `capabilities`: Optional. An optional JSON set of capabilities for this Feed Item (API 31.0+ only)
+
+```js
+var id = '00580000005eABFAA2';
+var text = 'Post text';
+var capabilities = {'link': { "urlName":"My Link","url":"http://www.mylink.com"}};
+org.chatter.postFeedItem({id: id, text: text, capabilities: capabilities}, function(err, resp){});
+```
 
 ### postComment()
 

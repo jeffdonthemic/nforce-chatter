@@ -93,6 +93,7 @@ module.exports = function(nforce, pluginName) {
         "feedElementType" : "FeedItem",
         "subjectId" : args.id
       }
+    if (args.capabilities) body.capabilities = args.capabilities;
     opts.method = 'POST';
     opts.body = JSON.stringify(body);
     return this._apiRequest(opts, opts.callback);
